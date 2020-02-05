@@ -6,7 +6,23 @@ git config --list
 git config --global user.name "Your Name"
 git config --global user.email "your_email@whatever.com"
 
-# listar alias 
+## Configurar meld no git difftool
+Execute: which meld
+Se não encontrar o meld, instale pelo terminal, possível saída do whit meld é /usr/bin/meld.
+
+git config --global diff.tool meld
+git config --global merge.tool meld
+
+Exemplo do arquivo .gitconfig após executar os comando:
+[diff]
+	external = meld
+	tool = meld
+
+[merge]
+    tool = meld
+
+
+# listar alias
 git config --list | grep alias
 
 # Criar alias
@@ -19,10 +35,6 @@ git config --global alias.pl pull
 git config --global alias.ps push
 git config --global alias.st status
 git config --global alias.stu "status -u"
-
-
-
-
 
 criei o hist só para acompanhar o curso
 git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
