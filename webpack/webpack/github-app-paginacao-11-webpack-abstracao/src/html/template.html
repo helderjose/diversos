@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- vem do webpack.config.js no plugin HtmlPlugin -->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+  <!-- critical rendering path -->
+  <style>
+    <%= compilation.assets['crp.css'].source() %>
+  </style>
+
+</head>
+<body>
+  <div data-js="app"></div>
+
+  <!-- o que vai ser carregado depois do critical rendering path -->
+  <% htmlWebpackPlugin.files.js.forEach((jsFile) => { %>
+    <script async src="<%= jsFile %>"></script>
+  <% }) %>
+
+  <!-- restante do css (não faz parte do crp) -->
+  <% htmlWebpackPlugin.files.css.forEach((cssFile) => { %>
+    <% if (cssFile !== 'crp.css') { %>
+      <link rel="stylesheet" href="<%= cssFile %>">
+    <% } %>
+  <% }) %>
+
+</body>
+</html>

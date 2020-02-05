@@ -1,0 +1,41 @@
+Criar o arquivo gulpfile.js
+
+--- jsHint ---
+https://www.npmjs.com/package/gulp-jshint
+npm install jshint gulp-jshint --save-dev
+
+
+--- gulp-clean ---
+https://www.npmjs.com/package/gulp-clean
+npm install --save-dev gulp-clean
+
+
+--- concat ----
+Coloca o conteúdo de vários arquivos em um só.
+
+--- uglify ---
+Minifica arquivos
+https://www.npmjs.com/package/gulp-uglify
+npm install --save-dev gulp-uglify
+
+--- event-stream ---
+https://www.npmjs.com/package/event-stream
+npm install event-stream --save
+
+
+--- html-min ---
+https://www.npmjs.com/package/gulp-htmlmin
+npm install --save-dev gulp-htmlmin
+
+--- clean css ---
+https://www.npmjs.com/package/gulp-clean-css
+npm install gulp-clean-css --save-dev
+
+
+--- run-sequence ---
+npm install run-sequence --save
+
+--- rename ---
+renomeia arquivo
+https://www.npmjs.com/package/gulp-rename
+npm install gulp-rename --save-dev

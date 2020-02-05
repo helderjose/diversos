@@ -1,0 +1,9 @@
+Grunt e Gulp são ferramentas para automatizar tarefaz utilizando JavaScript e executam na plataforma Node.js.
+
+Gulp
+Mais utilizado.
+Mais rápido que o Grunt.
+Requer conhecimento sobre a API de Stream do Noje.js
+
+Grunt
+Mais fácil que o Gulp

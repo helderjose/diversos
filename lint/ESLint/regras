@@ -1,0 +1,5 @@
+https://eslint.org/docs/rules
+
+max-depth
+https://eslint.org/docs/rules/max-depth
+This rule enforces a maximum depth that blocks can be nested to reduce code complexity.

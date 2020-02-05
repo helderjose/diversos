@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Menu component.">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/font.css">
+  <link rel="stylesheet" href="./menu.css">
+</head>
+<body>
+
+  <!--
+    Problemas:
+    - Quando o submenu está no fim da tela quebra porque não tem espaço;
+    - Não navega pelo teclado.
+  -->
+
+  <nav aria-label="Main Navigation">
+    <ul id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li
+        class="has-submenu">
+        <!-- onmouseover="openMenu(event)"
+        onmouseout="closeMenuTimer()" -->
+        <a
+          href="http://www.google.com"
+          aria-label="ir para o google.com"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >Space Bears</a>
+        <button
+          aria-expanded="false"
+          aria-label="clique para abrir os itens do Space Bears"
+        >&#9207;</button>
+        <ul>
+          <li><a href="#">Space Bear 6</a></li>
+          <li><a href="#">Space Bear 6 Plus</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+          <a href="#" aria-haspopup="true" aria-expanded="false">Mars Cars 6 &#9207;</a>
+        <ul>
+          <li><a href="#">Mars Cars 6 A</a></li>
+          <li class="has-submenu">
+              <a href="#" aria-haspopup="true" aria-expanded="false">Mars Cars 6 AA &#9207;</a>
+            <ul>
+                <li><a href="#">Space Bear A7</a></li>
+                <li class="has-submenu">
+                    <a href="#" aria-haspopup="true" aria-expanded="false">Space Bear A7 Plus &#9207;</a>
+                  <ul>
+                      <li><a href="#">Space Bear 77</a></li>
+                      <li><a href="#">Space Bear 77 Plus</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Space Bear A7+ Plus</a></li>
+              </ul>
+          </li>
+          <li class="has-submenu">
+              <a href="#" aria-haspopup="true" aria-expanded="false">Mars Cars 6B &#9207;</a>
+            <ul>
+              <li><a href="#">Space Bear 7</a></li>
+              <li><a href="#">Space Bear 7 Plus</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Mars Cars 6 Plus</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header role="banner">
+    <p>page header</p>
+  </header>
+
+  <main role="main">
+    <h1>Main Title</h1>
+    <p>Page paragraph</p>
+    <a href="#">main link 1</a>
+    <a href="#">main link 2</a>
+  </main>
+
+
+  <footer>
+    <p>page footer</p>
+  </footer>
+
+  <style>
+    main {
+      background-color: bisque;
+    }
+
+    footer {
+      background-color: orange;
+    }
+  </style>
+
+<script src="./menu.js"></script>
+</body>
+</html>

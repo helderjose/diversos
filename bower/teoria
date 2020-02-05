@@ -1,0 +1,21 @@
+https://bower.io/
+
+O Bower é um gerenciador de pacotes, criado pelo Twitter, e é ideal para aplicações web.
+O Bower é configurado por meio do arquivo bower.json, que armazena as dependências instaladas e suas versões. É possível gerar o arquivo digitando o comando abaixo:
+bower init
+
+- Reduz o trabalho braçal de ficar baixando pacotes.
+- Não precisa se preocupar com as dependências dos pacotes.
+- Evita o tráfego e armazenamento desnecessários de pacotes no repositório (git, svn e etc)
+- Manter o projeto mais organizado.
+- Facilita a atualização dos pacotes quando for necessário.
+
+Roda em cima do NodeJs
+
+--- bowerrc ---
+É o arquivo de configuração do bower.
+Ex: mudar o diretório bower_components para lib.
+touch .bowerrc
+{
+  "directory": "lib/"
+}

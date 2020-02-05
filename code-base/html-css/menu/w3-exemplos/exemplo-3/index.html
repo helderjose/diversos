@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!--
+      problemas: o submenu corta se não tiver espaço na tela.
+
+    -->
+    <nav role="presentation" aria-label="Main Navigation" id="flyoutnavkbbtn">
+      <ul>
+        <li><a href="#flyoutnavkbbtn">Home</a></li>
+        <li><a href="#flyoutnavkbbtn">Shop</a></li>
+        <li class="has-submenu">
+          <!-- esse deve ir para o site e não abrir o menu, o menu deve ser aberto pelo botão -->
+          <a class="has-link" href="http://www.google.com" aria-haspopup="true">Space Bears</a>
+          <button><span><span class="visuallyhidden">show submenu for “Space Bears”</span></span></button>
+          <ul>
+            <li><a href="#flyoutnavkbbtn">Space Bear 6</a></li>
+            <li><a href="#flyoutnavkbbtn">Space Bear 6 Plus</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+            <a
+              href="flyoutnavkbbtn"
+              aria-haspopup="true"
+              aria-expanded="false">
+              Mars Cars
+            </a>
+            <ul>
+              <li><a href="#">Mars Car 6</a></li>
+              <li><a href="#">Mars Car 6 Plus</a></li>
+            </ul>
+          </li>
+        <li><a href="#flyoutnavkbbtn">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p>https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavkbbtn</p>
+
+    <p>Approach 2: Use button as toggle</p>
+
+    <p>
+      For situations when the parent menu item needs to carry out a function, such as linking to a web page, a separate button can be added to the parent item, to open and close the submenu. This button can also act as a visual indicator for the presence of a submenu.
+    </p>
+
+
+    <link rel="stylesheet" href="./menu.css">
+    <script src="./menu.js"></script>
+
+  </body>
+</html>

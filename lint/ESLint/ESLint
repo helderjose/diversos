@@ -1,0 +1,16 @@
+https://eslint.org/
+https://eslint.org/docs/rules/
+https://eslint.org/docs/user-guide/getting-started
+
+
+You should then set up a configuration file:
+./node_modules/.bin/eslint --init
+
+
+After that, you can run ESLint on any file or directory like this:
+./node_modules/.bin/eslint yourfile.js
+
+
+# Com webpack
+--fix
+https://github.com/webpack-contrib/eslint-loader/issues/248

@@ -1,0 +1,8 @@
+https://www.styled-components.com/docs/basics
+
+
+Note
+
+It's highly recommended (but not required) to also use the Babel plugin. It offers
+many benefits like more legible class names, server-side rendering
+compatibility, smaller bundles, and more.

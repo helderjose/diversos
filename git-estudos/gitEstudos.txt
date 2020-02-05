@@ -1,0 +1,171 @@
+git kraken
+
+free com projeto privado
+https://about.gitlab.com/
+
+tem svn
+http://www.cloudforge.com/
+
+
+
+
+
+https://imasters.com.br/artigo/24260/desenvolvimento/dica-git-da-semana-stashes/?trace=1519021197&source=single
+
+
+========================================
+========== organizar ==========
+========================================
+git ls-remote origin // lista as branch remotas exibindo  o sha1 hash.
+git ls-remote --heads origin // lista só com nomes da branch
+
+
+
+
+
+
+==============================
+========== branch ==========
+==============================
+
+
+--- dica de nomear branch ---
+git branch feature-conciliacao-pagamentos-resumo
+git branch feature-conciliacao-pagamentos-exportar
+
+feature-AS-14500-conciliacao-pagamentos-exportar
+bugfix-AS-14501-conciliacao-pagamentos-exportar
+
+----- deletar branch -----
+local:
+git branch -d branch_name  // which only deletes the branch if it has already been fully merged in its upstream branch  < -d = --delete >
+git branch -D branch_name  // which deletes the branch "irrespective of its merged status.  < -D = --delete --force >
+
+==============================
+========== remote ==========
+==============================
+git remote show origin 
+
+==============================
+========== ls ==========
+==============================
+git ls-remote --heads	//lista as branches remota
+
+
+
+========================================
+========== diff e difftool ==========
+========================================
+Obs: se os arquivos estiverem iguais, o meld não abre.
+
+supondo que estou na branch1
+git difftool ./myFile	//compara myFile remoto com o local (da branch atual)
+git difftool origin/branch1:pathToFile/myFile pathToFile/myFile // compara o arquivo remoto com o local
+no meld fica: arquivo remoto  X  arquivo local.
+Os dois comandos são os mesmos, só que em um a branch foi inplicita e no outro explicita.
+-------------------
+
+Comparação entre branches.
+Supondo que estou na branch1, consigo compara o arquivo da branch2 com meu arquivo local.
+git difftool origin/branch2 src/main/resources/myFile.txt  //compara myFile.txt da branch2 com o local
+
+Comparação entre branches. Obs: o autocomplete não funciona no segundo parâmetro.
+No meld aparece na mesma ordem que foi passado o comando.
+git difftool branch1:src/main/resources/myFile.txt branch2:src/main/resources/myFile.txt  //acho que compara entre as branches local
+git difftool origin/branch1:src/main/resources/application.yml origin/branch2:src/main/resources/application.yml  //pega branches remota.
+
+
+racunho
+git difftool src/main/resources/myFile.txt
+git difftool branch1 src/main/resources/myFile.txt  //branch1 local x file local  (nao sei se o arquivo da branch1 remoto ou da branch1 local)
+git difftool origin/branch1:src/main/resources/myFile.txt src/main/resources/myFile.txt  //arquivo remoto com local
+
+supondo que estou na branch1, posso comparar com outra branch
+git difftool origin/branch2:src/main/resources/myFile.txt src/main/resources/myFile.txt  //branch2 remoto X arquivo local
+
+supondo que estou na branch1, posso comprar entre branch2 e branch3
+git difftool origin/branch2:src/main/resources/myFile.txt origin/branch3:src/main/resources/myFile.txt  //branch2 remoto e branch3 remoto
+git difftool origin/branch2 origin/branch3 -- src/main/resources/myFile.txt  //mesmo do de cima
+
+--- compara dois commits ---
+git difftool 25b5999..ebccb41a
+obs: vai abrir o meld para cada arquivo commitado
+
+
+-- ver arquivos alterados em um commit -
+git diff-tree --no-commit-id --name-only -r <commit number>
+git diff-tree --no-commit-id --name-only -r 8faa750
+
+
+
+==============================
+========== fetch ==========
+==============================
+https://git-scm.com/docs/git-fetch
+git fetch
+git fetch --all
+
+
+
+==============================
+========== remote ==========
+==============================
+git remote update origin --prune  // update the local list of remote branches.
+
+
+
+==============================
+========== stash ==========
+==============================
+https://git-scm.com/book/pt-br/v1/Ferramentas-do-Git-Fazendo-Stash
+
+git stash list  // lista o stash
+git stash    // Criar um stash
+git stash save "nomeDoStash"   // Cria um stash com um nome
+git stash apply stash@{1}   // Selecionar um stash
+git stash drop stash@{1}   //  Remover um stash
+
+
+
+
+
+
+
+======================================================================
+========== comparar arquivo remoto com o arquivo local ==========
+======================================================================
+git difftool branch -- pathToFile
+git difftool feature_AS-14509_gestao_vendas -- partials/menu/menu.html
+git difftool origin/feature/AS-14515/aluguel_equipamento:partials/menu/menu.html -- partials/menu/menu.html
+obs: O da esquerda é o remoto, o da direito o local
+
+--- comparando arquivos diferentes ----
+compara o arquivo remoto menu.html com menu-cartao.html
+git difftool origin/feature/AS-14515/aluguel_equipamento:partials/menu/menu.html -- partials/menu/menu-cartao.html
+
+
+
+obs:
+primeiro parâmetro: nao sei se é remoto ou local
+segundo parãmetro: é o arquivo local
+git difftool feature_AS-14509_gestao_vendas:partials/menu/menu.html -- partials/menu/menu-cartao.html
+
+
+============================================================
+========== comparar arquivos entre branches ==========
+============================================================
+Cuidado: Acho que comparar entre branches mas o que está no server (já foi dado push), não compara com a versão local.
+git difftool feature-AS-14565-ajustar-menu..feature_AS-14509_gestao_vendas -- partials/menu/menu.html
+git difftool feature_AS-14509_gestao_vendas..feature-AS-14565-ajustar-menu -- partials/menu/menu.html
+
+
+
+++++ fazer mais testes +++++
+obs: nao sei se o primeiro parâmetro pegou da branch que estava no meu pc (sem push) ou se pegou remoto (depois do push)
+O segundo parâmetro não pega auto-complete, o segundo parâmetro é o arquivo remoto
+git difftool feature_AS-14509_gestao_vendas:partials/menu/menu.html feature-AS-14565-ajustar-menu:partials/menu/menu.html
+
+
+obs: o segundo parâmetro pegou o arquivo remoto e também não pega auto-complete
+git difftool feature_AS-14509_gestao_vendas:partials/menu/menu.html feature-AS-14565-ajustar-menu:partials/menu/menu-cartao.html
+

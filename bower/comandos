@@ -1,0 +1,26 @@
+bower help	// ajuda dos principais comandos.
+bower init	// cria o arquivo bower.json
+
+Esse exemplo mostra o download do angularJs com bower.
+comandos:
+bower search angular
+bower info angular   //mais informações do pacote, como versão.
+
+
+Instalando pacotes.
+
+Opções:
+--save
+--save-dev
+--production   //baixa só as dependências principais do bower.json, ignora as dev dependencies.
+
+
+--- instalando angularJs ----
+bower infor angular
+bower install angular#1.2.16 --save
+
+
+
+--- remover pacotes -----
+bower uninstall <name>
+bower uninstall angular-mocks --save-dev

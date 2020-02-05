@@ -1,0 +1,127 @@
+https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04
+
+
+------------ comandos mais usados ----------------------
+git log //mostra os commits
+git remote -v //exibe a url do projeto
+--------------------------------------------------------
+
+git clone https://gitlab.com/meuProjeto.git
+
+git pull
+git add arquivosParaAdicionar
+git commit -m "minha mensagem"
+git pull
+git push
+
+--- Existing Folder -----
+cd myExistingFolder
+git init
+git remote add origin https://gitlab.com/myProject.git
+git add .
+git commit -m "Initial commit."
+git push -u origin master
+
+
+
+----- Existing Git Repository -----
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin https://gitlab.com/myProject.git
+git push -u origin --all
+git push -u origin --tags
+-------------------------------------
+
+----- mudar url do repositório git -----
+git remote -v //exibe a url atual
+git remote set-url origin newUrl //muda para newUrl
+-------------------------------------------------------
+
+
+
+
+----------------------------
+
+----- return detached head to master -----
+git merge 85442ed6 HEAD	// 85442ed6 era um commit que estava no estado "detached"
+--------------------
+
+
+
+------------ conflito ------------------
+git mergetool - quando der conflito esse comando (precisa do meld)
+---------------------------------------------------
+
+---- listar commits de um usuário -----
+git log --author="helder.goncalves"
+------------------------------------------
+
+
+
+
+
+
+
+==========================================================
+========== push entre branchies e merge request ==========
+==========================================================
+------------- push --------------------
+- add e commit na branch que estou trabalhando. (não dar push antes de atualizar com a develop, "próximo passo")
+- git checkout develop 
+- git pull na branch develop
+- git checkout minha branch. [git checkout feature/5_form-elements]
+- git merge develop
+- commit do que veio da develop. [git commit -m "Merge develop."] (só se der conflito)
+- push da minha branch - [git push origin feature/5_form-elements]
+- Criar merge request no gitlab
+
+
+
+---- push v2 ------
+- add e commit na branch que estou trabalhando.  (não dar push antes de atualizar com a develop, "próximo passo")
+- git pull origin develop
+- commit do que veio da develop. [git commit -m "Merge develop."] (só se der conflito)
+- push da minha branch - [git push origin feature/5_form-elements]
+- Criar merge request no gitlab - [se não existir nenhum merge request meu, se existir só o push já resolve]
+
+---- criar merge resquest ----
+no git do projeto, menu "Merge Requests"
+
+========== fim push entre branchies e merge request ==========
+
+
+
+
+---------- mudar de branch ----------
+git checkout branchName
+
+----- editar comentário ----
+evite fazer isso
+parece que só dá certo antes do push
+https://pt.stackoverflow.com/questions/61429/como-editar-uma-mensagem-de-commit-incorreta-no-git
+
+
+
+
+
+
+==================================================
+========== resolução de conflito ==========
+==================================================
+Quando der conflito execute
+git mergetool  (vai abrir o meld)
+
+
+==================================================
+========== gitignore (arquivo) ==========
+==================================================
+https://help.github.com/articles/ignoring-files/
+
+Se tiver um arquivo no gitignore e mesmo aparecer no git status, use.
+git rm --cached FILENAME
+git rm -r --cached FOLDERNAME
+
+
+
+
+

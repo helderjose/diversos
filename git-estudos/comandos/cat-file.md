@@ -1,0 +1,1 @@
+https://githowto.com/git_internals_working_directly_with_git_objects

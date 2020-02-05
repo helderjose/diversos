@@ -1,0 +1,17 @@
+instalação
+npm install -g yarn // precisa ter o nodejs instalado para executar o npm
+yarn -v
+
+instalar pacotes
+yarn add <package> (npm install --save <package>)
+
+instalar pacotes (com package.json)
+yarn ou yarn install (npm install)
+
+instalar pacotes (devDepencencies)
+yarn add --dev <package> (npm install --save-dev <package>)
+
+rodar npm scripts
+yarn <script> (npm run <script>)
+yarn run <script> (npm run <script>)
+

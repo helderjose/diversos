@@ -1,0 +1,23 @@
+{
+  "name": "bower-projeto",
+  "authors": [
+    "user name"
+  ],
+  "description": "bower example project",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.2.16"
+  }
+}

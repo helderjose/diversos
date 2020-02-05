@@ -1,0 +1,175 @@
+# Getting Started
+https://nextjs.org/learn/basics/getting-started
+https://nextjs.org/learn/basics/getting-started/setup
+https://nextjs.org/learn/basics/getting-started/404-page
+https://nextjs.org/learn/basics/getting-started/first-page
+https://nextjs.org/learn/basics/getting-started/errors
+https://nextjs.org/learn/basics/getting-started/finally
+
+
+
+# Navigate Between Pages
+https://nextjs.org/learn/basics/navigate-between-pages
+https://nextjs.org/learn/basics/navigate-between-pages/setup
+https://nextjs.org/learn/basics/navigate-between-pages/using-link
+https://nextjs.org/learn/basics/navigate-between-pages/client-side-history
+https://nextjs.org/learn/basics/navigate-between-pages/adding-link-props
+https://nextjs.org/learn/basics/navigate-between-pages/hoc
+https://nextjs.org/learn/basics/navigate-between-pages/link-with-a-button
+https://nextjs.org/learn/basics/navigate-between-pages/works-with-anything
+https://nextjs.org/learn/basics/navigate-between-pages/simple-but-powerful
+
+Mais sobre links
+https://nextjs.org/docs/#routing
+
+comandos para o exemplo pronto
+git clone https://github.com/zeit/next-learn-demo.git
+cd next-learn-demo
+cd 1-navigate-between-pages
+npm install
+npm run dev
+
+
+
+# Using Shared Components
+https://nextjs.org/learn/basics/using-shared-components
+https://nextjs.org/learn/basics/using-shared-components/setup
+https://nextjs.org/learn/basics/using-shared-components/create-the-header-component
+https://nextjs.org/learn/basics/using-shared-components/using-the-header-component
+https://nextjs.org/learn/basics/using-shared-components/the-component-directory
+https://nextjs.org/learn/basics/using-shared-components/the-layout-component
+https://nextjs.org/learn/basics/using-shared-components/rendering-children-components
+https://nextjs.org/learn/basics/using-shared-components/use-components
+
+Comandos para o exemplo pronto
+git clone https://github.com/zeit/next-learn-demo.git
+cd next-learn-demo
+cd 2-using-shared-components
+
+npm install
+npm run dev
+
+
+
+# Create Dynamic Pages
+https://nextjs.org/learn/basics/create-dynamic-pages
+https://nextjs.org/learn/basics/create-dynamic-pages/setup
+https://nextjs.org/learn/basics/create-dynamic-pages/adding-a-list-of-posts
+https://nextjs.org/learn/basics/create-dynamic-pages/passing-data
+https://nextjs.org/learn/basics/create-dynamic-pages/with-router
+https://nextjs.org/learn/basics/create-dynamic-pages/finally
+
+
+Exemplo para download
+git clone https://github.com/zeit/next-learn-demo.git
+cd next-learn-demo
+cd 3-create-dynamic-pages
+
+npm install
+npm run dev
+
+
+
+
+# Clean URLs with Route Masking
+https://nextjs.org/learn/basics/clean-urls-with-route-masking
+https://nextjs.org/learn/basics/clean-urls-with-route-masking/setup
+https://nextjs.org/learn/basics/clean-urls-with-route-masking/route-masking
+https://nextjs.org/learn/basics/clean-urls-with-route-masking/history-awareness
+https://nextjs.org/learn/basics/clean-urls-with-route-masking/reload
+https://nextjs.org/learn/basics/clean-urls-with-route-masking/404
+
+
+Exemplo para download
+git clone https://github.com/zeit/next-learn-demo.git
+cd next-learn-demo
+cd 4-clean-urls
+
+npm install
+npm run dev
+
+
+
+# Server Side Support for Clean URLs
+https://nextjs.org/learn/basics/server-side-support-for-clean-urls
+https://nextjs.org/learn/basics/server-side-support-for-clean-urls/setup
+https://nextjs.org/learn/basics/server-side-support-for-clean-urls/create-a-custom-server
+https://nextjs.org/learn/basics/server-side-support-for-clean-urls/create-our-custom-route
+https://nextjs.org/learn/basics/server-side-support-for-clean-urls/information-on-url
+https://nextjs.org/learn/basics/server-side-support-for-clean-urls/finally
+https://nextjs.org/learn/basics/server-side-support-for-clean-urls/information-on-url
+
+
+https://nextjs.org/docs/#custom-server-and-routing
+
+Exemplo para download
+git clone https://github.com/zeit/next-learn-demo.git
+cd next-learn-demo
+cd 5-clean-urls-ssr
+
+npm install
+npm run dev
+
+
+
+# Fetching Data for Pages
+https://nextjs.org/learn/basics/fetching-data-for-pages
+https://nextjs.org/learn/basics/fetching-data-for-pages/setup
+https://nextjs.org/learn/basics/fetching-data-for-pages/fetching-batman-shows
+https://nextjs.org/learn/basics/fetching-data-for-pages/only-on-the-server
+https://nextjs.org/learn/basics/fetching-data-for-pages/fetching-data-for-pages
+https://nextjs.org/learn/basics/fetching-data-for-pages/fetch-data-in-client-side
+https://nextjs.org/learn/basics/fetching-data-for-pages/finally
+
+
+Exemplo para download
+git clone https://github.com/zeit/next-learn-demo.git
+cd next-learn-demo
+cd 6-fetching-data
+
+npm install
+npm run dev
+
+Fetching data and component lifecycle
+https://nextjs.org/docs/#fetching-data-and-component-lifecycle
+
+
+# Styling Components
+https://nextjs.org/learn/basics/styling-components
+https://nextjs.org/learn/basics/styling-components/setup
+https://nextjs.org/learn/basics/styling-components/styling-our-home-page
+https://nextjs.org/learn/basics/styling-components/styles-template-strings
+https://nextjs.org/learn/basics/styling-components/styles-and-nested-components
+https://nextjs.org/learn/basics/styling-components/no-effect-for-nested-components
+https://nextjs.org/learn/basics/styling-components/global-styles
+https://nextjs.org/learn/basics/styling-components/global-styles-work
+https://nextjs.org/learn/basics/styling-components/what-next
+
+
+doc do styled-jsx
+https://github.com/zeit/styled-jsx
+
+outras soluções para style
+https://github.com/zeit/next.js#css-in-js
+
+
+global selectors:
+https://github.com/zeit/styled-jsx#one-off-global-selectors
+
+- Evite o css tradicional com Nextjs;
+- Nextjs recomenda o css in js.
+
+
+Exemplo para download
+git clone https://github.com/zeit/next-learn-demo.git
+cd next-learn-demo
+cd 7-styling-components
+
+npm install
+npm run dev
+
+
+# Deploying a Next.js App
+https://nextjs.org/learn/basics/deploying-a-nextjs-app
+
+Pulei esse exemplo por enquanto, porque no projeto na Accurate eu não ia precisar fazer deploy.

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Menu component.">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/font.css">
+</head>
+<body>
+
+  <!--
+    Problemas: quando o submenu está no fim da tela quebra porque não tem espaço.
+  -->
+
+  <nav aria-label="Main Navigation">
+    <ul id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li class="has-submenu">
+        <a href="#" aria-haspopup="true" aria-expanded="false">
+          Space Bears
+        </a>
+        <!-- <button>&#9207;</button> -->
+        <input type="checkbox" class="checkbox">
+        <ul>
+          <li><a href="#">Space Bear 6</a></li>
+          <li><a href="#">Space Bear 6 Plus</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#" aria-haspopup="true" aria-expanded="false">Mars Cars</a>
+        <input type="checkbox" class="checkbox">
+        <ul>
+          <li><a href="#">Mars Cars 6</a></li>
+          <li><a href="#">Mars Cars 6 Plus</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header role="banner">
+    <p>page header</p>
+  </header>
+
+  <main role="main">
+    <h1>Main Title</h1>
+    <p>Page paragraph</p>
+    <a href="#">main link 1</a>
+    <a href="#">main link 2</a>
+  </main>
+
+  <style>
+    nav {
+      top: 0;
+      position: sticky;
+      background: #333;
+    }
+    nav ul {
+      list-style: none;
+    }
+
+    #menu,
+    #menu > li { display: flex; }
+
+    #menu {
+      justify-content: center;
+    }
+
+    #menu a {
+      color: #FFF;
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    #menu button {
+      /* width: 20px; */
+      /* height: 20px; */
+      /* border-radius: 50%; */
+      color: #fff;
+      padding: 10px 5px;
+      background-color: #333;
+    }
+
+    .has-submenu {
+      position: relative;
+      align-items: center;
+    }
+
+    .has-submenu > ul {
+      display: none;
+      position: absolute;
+      width: max-content;
+      background-color: #333;
+      top: 100%;
+      left: 0;
+    }
+
+    #menu li:hover,
+    #menu li:hover > a,
+    #menu a:focus,
+    #menu .checkbox:focus,
+    .has-submenu li:hover > .checkbox {
+      color: #333;
+      background-color: #fff;
+    }
+    #menu li:hover > a,
+    #menu a:focus {
+      text-decoration: underline;
+    }
+
+    .has-submenu:hover > ul,
+    .has-submenu .checkbox:checked + ul {
+      display: block;
+    }
+
+
+  </style>
+
+  <footer>
+    <p>page footer</p>
+  </footer>
+
+  <style>
+    main {
+      background-color: bisque;
+    }
+
+    footer {
+      background-color: orange;
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Passos mínimos de build em um projeto.
+- Limpar todos os arquivos deixados pelo processo da distribuição anterior;
+- Verificar a qualida do código js;
+- Concatenar os arquivos js;
+- Minificar todos os arquivos js já concatenados em um único arquivo;
+- Minificar os arquivos css;
+- Minificar os arquivos html;
+- Copiar recursos necessáriso;
+- Limpar arquivos intermediários.

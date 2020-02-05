@@ -1,0 +1,25 @@
+https://gruntjs.com/
+https://gruntjs.com/plugins
+https://gruntjs.com/getting-started
+
+--- configuração ---
+node js
+npm init //para criar o arquivo package.js
+npm install -g grunt-cli
+npm install grunt --save-dev
+
+
+--- comandos grunt ---
+grunt --version
+
+----- gruntfile.js -----
+* grunt.initConfig
+Fica a configuração de cada plugin.
+
+
+* grunt.registerTask
+
+--- executar sem intalar globalmente --
+./node_modules/grunt/bin/grunt --version
+./node_modules/grunt/bin/grunt build  // faz build do projeto
+

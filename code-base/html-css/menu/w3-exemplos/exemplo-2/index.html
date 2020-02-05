@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!--
+      problemas: o submenu corta se não tiver espaço na tela.
+
+      Usa o id do menu nos itens que tem submenu
+    -->
+    <nav
+      role="presentation"
+      aria-label="Main Navigation"
+      id="flyoutnavmousefixed"
+    >
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li class="has-submenu">
+          <a
+            href="flyoutnavmousefixed"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Space Bears</a
+          >
+          <ul>
+            <li><a href="#">Space Bear 6</a></li>
+            <li><a href="#">Space Bear 6 Plus</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a
+            href="flyoutnavmousefixed"
+            aria-haspopup="true"
+            aria-expanded="false">
+            Mars Cars
+          </a>
+          <ul>
+            <li><a href="#">Mars Car 6</a></li>
+            <li><a href="#">Mars Car 6 Plus</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p>https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavmousefixed</p>
+
+    <p>Approach 1: Use parent as toggle</p>
+
+    <p>
+      Use this approach in situations where the parent menu item only summarizes the submenu and doesn’t have to carry out a function, such as linking to a web page. In this case, the submenu is opened by a script when the user activates the top-level item and closed when the focus leaves the submenu.
+    </p>
+    <p>
+      Note: The value of the href attribute is ignored but you might still want to link to an existing document in case JavaScript is not loaded.
+    </p>
+
+
+    <link rel="stylesheet" href="./menu.css">
+    <script src="./menu.js"></script>
+
+  </body>
+</html>

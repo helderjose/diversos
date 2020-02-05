@@ -1,0 +1,10 @@
+git init // cria um repositório
+
+Ex:
+mkdir hello
+cd hello
+touch hello.html
+
+git init
+git add hello.html
+git commit -m "First Commit"

@@ -1,0 +1,57 @@
+https://www.npmjs.com/package/grunt-contrib-jshint
+
+----- jshint -----
+Faz validações em arquivos js. Verifica a qualidade do código, como falta de ; por exemplo.
+
+npm install grunt-contrib-jshint --save-dev  //instala o plugin
+grunt.loadNpmTasks('grunt-contrib-jshint');  //no arquivio gruntfile.js
+
+
+----- concat -----
+https://www.npmjs.com/package/grunt-contrib-concat
+Concatena arquivos js.
+
+npm install grunt-contrib-concat --save-dev
+grunt.loadNpmTasks('grunt-contrib-concat');
+
+
+----- uglify -----
+https://www.npmjs.com/package/grunt-contrib-uglify
+Minificar todos os arquivos js já concatenados em um arquivo único.
+
+npm install grunt-contrib-uglify --save-dev
+grunt.loadNpmTasks('grunt-contrib-uglify');
+
+
+----- cssmin -----
+https://www.npmjs.com/package/grunt-contrib-cssmin
+Minificar arquivos css.
+npm install grunt-contrib-cssmin --save-dev
+grunt.loadNpmTasks('grunt-contrib-cssmin');
+
+
+----- htmlmin -----
+https://www.npmjs.com/package/grunt-contrib-htmlmin
+Minificar html
+
+npm install grunt-contrib-htmlmin --save-dev
+grunt.loadNpmTasks('grunt-contrib-htmlmin');
+
+
+----- clean -----
+Deletar arquivos gerados no processo de build
+https://www.npmjs.com/package/grunt-contrib-clean
+
+npm install grunt-contrib-clean --save-dev
+grunt.loadNpmTasks('grunt-contrib-clean');
+
+----- copy -----
+Copiar arquivos e renomear arquivos.
+https://www.npmjs.com/package/grunt-contrib-copy
+
+npm install grunt-contrib-copy --save-dev
+grunt.loadNpmTasks('grunt-contrib-copy');
+
+
+
+

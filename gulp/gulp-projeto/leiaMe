@@ -1,0 +1,10 @@
+npm install
+
+https://gulpjs.com/
+
+--- instalação gulp ---
+Precisa ter o node instalado na máquina.
+
+npm install -g gulp-cli
+npm install gulp --save-dev
+gulp --version

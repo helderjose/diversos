@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- vem do webpack.config.js no plugin HtmlPlugin -->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+</head>
+<body>
+  <div data-js="app"></div>
+
+  <!-- O html-webpack-plugin vai colocar o bundle.js aqui para mim -->
+  <!-- <script src="/dist/bundle.js"></script> -->
+
+  <!--
+    No fim desse exemplo não vai mais ser o bundle.js vai ser algo como
+    main-90558d3cf45818a7393a.js
+  -->
+</body>
+</html>

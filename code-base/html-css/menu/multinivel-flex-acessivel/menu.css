@@ -1,0 +1,56 @@
+nav {
+  top: 0;
+  position: sticky;
+  background: #333;
+}
+nav ul {
+  list-style: none;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menu > li {
+  display: flex;
+}
+#menu a {
+  color: #FFF;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.has-submenu {
+  position: relative;
+}
+
+.has-submenu ul {
+  display: none;
+  position: absolute;
+  width: max-content;
+  background-color: #333;
+}
+.has-submenu > ul {
+  top: 100%;
+  left: 0;
+}
+.has-submenu > ul ul {
+  top: 0;
+  left: 100%;
+}
+
+#menu .has-submenu ul a {
+  display: flex;
+}
+
+#menu a:hover,
+#menu a:focus {
+  color: #333;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.open > ul{
+  display: block;
+}

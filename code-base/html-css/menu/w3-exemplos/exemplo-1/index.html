@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!--
+      problemas: o submenu corta se não tiver espaço na tela
+    -->
+    <nav
+      role="presentation"
+      aria-label="Main Navigation"
+      id="flyoutnavmousefixed"
+    >
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li class="has-submenu">
+          <a
+            href="#"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Space Bears</a
+          >
+          <ul>
+            <li><a href="#">Space Bear 6</a></li>
+            <li><a href="#">Space Bear 6 Plus</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu outra-classe">
+          <a
+            href="#"
+            aria-haspopup="true"
+            aria-expanded="false">
+            Mars Cars
+          </a>
+          <ul>
+            <li><a href="#">Mars Car 6</a></li>
+            <li><a href="#">Mars Car 6 Plus</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h2>Fly-out functionality</h2>
+    <p>The fly-out functionality is created using CSS and scripting with slightly separate considerations for mouse and keyboard users.</p>
+
+    <h3>Mouse users</h3>
+    <p>This example uses CSS code to show and hide the submenus when the parent menu items are hovered:</p>
+    <p>In addition, scripting is used to slightly delay the immediate closing of submenu items when the mouse leaves the area. This delay makes it easier to use the menu when navigation by a mouse is not very precise.</p>
+    <p>In this example, a delay of one second is added using a timer</p>
+
+    <link rel="stylesheet" href="./menu.css">
+    <script src="./menu.js"></script>
+
+  </body>
+</html>
