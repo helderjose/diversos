@@ -1,0 +1,11 @@
+https://community.jboss.org/wiki/JBossAS7UserGuide
+
+Configurar porta
+$JBOSS_HOME/standalone/configuration/standalone.xml
+
+inicar
+bin/standalone.sh ou bin/standalone.bat
+para
+ctrl + c
+
+http://localhost:8080

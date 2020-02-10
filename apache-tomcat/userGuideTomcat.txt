@@ -1,0 +1,36 @@
+Apache\ApacheTomcat7.0.34\conf
+editar tomcat-users.xml
+
+linha que vem no arquivo
+<!-- <user password="pomarola" roles="manager-script,admin" username="pomarola"/> -->
+
+colocar essas
+
+<role rolename="manager-gui"/>
+<user username="pomarola" password="pomarola" roles="manager-gui"/>
+	
+<role rolename="manager-script"/>
+<user username="pomarola" password="pomarola" roles="manager-script"/>
+
+<role rolename="manager-jmx"/>
+<user username="pomarola" password="pomarola" roles="manager-jmx"/>
+
+<role rolename="manager-status"/>
+<user username="pomarola" password="pomarola" roles="manager-status"/>
+	
+<role rolename="admin-gui"/>
+<user username="pomarola" password="pomarola" roles="admin-gui"/>
+	
+<role rolename="admin-script"/>
+<user username="pomarola" password="pomarola" roles="admin-script"/>
+
+você pode criar as seguintes regras além da citada acima
+
+    manager-gui - allows access to the HTML GUI and the status pages
+    manager-script - allows access to the text interface and the status pages
+    manager-jmx - allows access to the JMX proxy and the status pages
+    manager-status - allows access to the status pages only
+	
+    admin-gui - allows access to the HTML GUI
+    admin-script - allows access to the text interface
+
