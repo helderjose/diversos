@@ -1,2 +1,45 @@
 https://github.com/nvie/gitflow/wiki/installation
 https://nvie.com/posts/a-successful-git-branching-model/
+https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+Nos links ensina criar release e etc, aqui só fiz o básico de feature
+
+Instalação
+Fedora:
+sudo dnf install gitflow
+
+git flow // lista as opções
+git flow version
+
+
+
+Iniciar repoisitório git flow
+git flow // lista as opções
+git flow
+git flow init // cria um repositório com git flow
+
+
+
+Iniciar git flow em um repositório existente:
+Na pasta do repositório execute:
+git flow init
+Branch name for production releases: [master] master
+Branch name for "next release" development: [develop]   // enter para aceitar o valor padrão
+Feature branches? [feature/]  // enter para aceitar o valor padrão 
+Release branches? [release/]  // enter para aceitar o valor padrão
+Hotfix branches? [hotfix/]   // enter para aceitar o valor padrão
+Support branches? [support/]   // enter para aceitar o valor padrão
+Version tag prefix? []   // enter para aceitar o valor padrão
+
+git checkout develop
+git flow feature start my-primary-feature  // vai criar a branch "feature/my-primary-feature"
+git ps -u origin feature/my-primary-feature
+Altere o arquivo, add, commit e push.
+
+git flow feature finish my-primary-feature
+vai mudar para develop e fazer merge da develop com a my-primary-feature e vai deletar a my-primary-feature local
+
+git push
+
+
