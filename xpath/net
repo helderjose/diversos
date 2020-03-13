@@ -1,0 +1,12 @@
+Tela: welcome
+$x("//div[@id='welcome']//button")[0].attributes.length
+$x("//div[@id='welcome']//button")[0].attributes
+$x("//div[@id='welcome']//button")[0].attributes['data-gtm-event-label'].name
+
+
+
+clear();
+console.log("data-gtm-event-category: ", $x("//div[@id='welcome']//button")[0].attributes['data-gtm-event-category'].nodeValue)
+console.log("data-gtm-event-label: ", $x("//div[@id='welcome']//button")[0].attributes['data-gtm-event-label'].nodeValue)
+console.log("data-gtm-event-action: ", $x("//div[@id='welcome']//button")[0].attributes['data-gtm-event-action'].nodeValue)
+console.log("data-gtm-dimension35: ", $x("//div[@id='welcome']//button")[0].attributes['data-gtm-dimension35'].nodeValue)

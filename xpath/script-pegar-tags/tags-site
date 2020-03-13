@@ -1,0 +1,72 @@
+{
+  "name": "welcome",
+  "file": "welcome.vue",
+  "title": "Olá <nome do usuário logado>",
+  "tags": [
+    "data-gtm-event-category: net:minha-net",
+    "data-gtm-event-label: diagnostico:passo-inicial:selecao-problema-seguir",
+    "data-gtm-event-action: click:autoatendimento:tecnico"
+  ]
+}
+
+Tela: welcome
+botão  "vamos lá"
+"data-gtm-event-category: net:minha-net",
+"data-gtm-event-label: diagnostico:passo-inicial:selecao-problema-seguir",
+"data-gtm-event-action: click:autoatendimento:tecnico"
+
+Tela: product-selection
+
+
+
+
+<button
+  data-v-f3751322=""
+  type="button"
+  data-gtm-event-category="net:minha-net"
+  data-gtm-event-label="diagnostico::selecao-problema-avancar"
+  data-gtm-event-action="click:autoatendimento:tecnico"
+  data-gtm-dimension35="vt-direto"
+  class="button button__primary gtm-element-event">
+                  Avançar
+                  <i data-v-f3751322="" class="net__icon net__icon--right"></i></button>
+
+
+
+// clear();
+// getTags();
+
+
+// $x("//div[contains(@class,'modal_box')]//p[contains(text(), 'condições de cobrança')]")
+
+// $x("//div[contains(@class,'modal_box')]//p[contains(text(), 'condições de cobrança')]")
+
+// issue-selection botão voltar
+console.log("botão voltar");
+$x("//button[contains(text(), 'Voltar')]").forEach((btn) => {
+  console.log(`
+data-gtm-event-category=${btn.attributes.getNamedItem("data-gtm-event-category").textContent}
+data-gtm-event-label=btn.attributes.getNamedItem("data-gtm-event-label").textContent
+data-gtm-event-action=btn.attributes.getNamedItem("data-gtm-event-action").textContent
+`);
+
+
+// issue-selection botão avancar
+  console.log("botão Avançar");
+$x("//button[contains(text(), 'Avançar')]").forEach((btn) => {
+  console.log(`
+data-gtm-event-category=${btn.attributes.getNamedItem("data-gtm-event-category").textContent}
+data-gtm-event-label=btn.attributes.getNamedItem("data-gtm-event-label").textContent
+data-gtm-event-action=btn.attributes.getNamedItem("data-gtm-event-action").textContent
+`);
+//   console.log("data-gtm-event-category="+btn.attributes.getNamedItem("data-gtm-event-category").textContent, "\n\n\n");
+//   console.log(btn.attributes.getNamedItem("data-gtm-event-label").textContent);
+//   console.log(btn.attributes.getNamedItem("data-gtm-event-action").textContent);
+});
+
+
+
+
+
+
+

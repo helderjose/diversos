@@ -1,0 +1,192 @@
+
+obs:
+issue-selection
+o botão voltar já tinha o bug do "::", como reaproveitou
+
+O certo era eu conversar com alguém da equipe de tagueamento,
+porque no fluxo da planilha, não tem as tags do "issue-selection / issues", só
+pede as tags do botão.
+
+
+
+----- welcome -----
+welcome botão vamos lá
+data-gtm-event-category="net:minha-net"
+data-gtm-event-label="diagnostico:passo-inicial:selecao-problema-seguir"
+data-gtm-event-action="click:autoatendimento:tecnico"
+
+
+----- seleção de produto -----
+product-selection - FONE
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:telefone
+data-gtm-event-action=click:autoatendimento:tecnico
+
+product-selection - TV
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv
+data-gtm-event-action=click:autoatendimento:tecnico
+
+product-selection - INTERNET
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:internet
+data-gtm-event-action=click:autoatendimento:tecnico
+
+product-selection - all
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:all
+data-gtm-event-action=click:autoatendimento:tecnico
+
+product-selection - botão Avançar
+nao tem tags
+
+
+----- Seleção de Problema -----
+Temos um bug nessas tags na data-gtm-event, tem "::"
+
+issue-selection - A imagem está ruim
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:A imagem está ruim
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Quero reforçar o sinal da minha TV
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Quero reforçar o sinal da minha TV
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Alguns canais não funcionam
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Alguns canais não funcionam
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Preciso de um novo controle remoto
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Preciso de um novo controle remoto
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Quero mudar o ponto de local
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Quero mudar o ponto de local
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Outros
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Outros
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - botão Voltar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico::selecao-problema-voltar
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - botão Avançar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico::selecao-problema-avancar
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - botão Voltar - modal verificar pilhas do controle
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:modal-pilhas-controle-remoto:voltar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+issue-selection - botão Continuar - modal verificar pilhas do controle
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:modal-pilhas-controle-remoto:continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+
+
+
+------ resolved -----
+Está tudo certo por aí agora?
+
+usa o $root.selectedProduct.toLowerCase()
+fone
+tv
+internet
+all
+
+
+
+
+tudo certo por aí agora? - botão Não
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:problema-resolvido:não
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+tudo certo por aí agora? - botão Sim
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:problema-resolvido:sim
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+----- solution steps -----
+Vamos Começar?
+solution-steps - botão Vamos Lá!
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:comecar-boot-vamos-la
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+----- solution steps passo 1/3 -----
+solution-steps - Passo 1/3 - btn voltar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:passo-1-voltar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+solution-steps - Passo 1/3 - btn avançar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:passo-1-avancar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+solution-steps - Passo 2/3 - btn voltar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:passo-2-voltar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+solution-steps - Passo 2/3 - btn avançar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:passo-2-avancar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+solution-steps - Passo 3/3 - btn voltar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:passo-3-voltar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+solution-steps - Passo 1/3 - btn Ok Fiz o passo a passo
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:passo-3-avancar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+----- uma pena -----
+schedule-vt - Uma Pena! - btn Não
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:pre-agendamento-vt-agendar-nao
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+schedule-vt - Uma Pena! - btn Sim
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:pre-agendamento-vt-agendar-vt
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+----- avido de cobrança -----
+
+Aviso de cobrança - btn continuar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:aviso-cobranca-continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+----- Agendar Visita -----
+schedule-vt - Agendar Visita - btn agendar visita
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:calendario-agendar-visita
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+schedule-vt - Agendar Visita - btn não quero agendar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:calendario-nao-quero-agendar
+data-gtm-event-action=click:autoatendimento:diagnostico

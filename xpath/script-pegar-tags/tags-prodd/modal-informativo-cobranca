@@ -1,0 +1,25 @@
+Antes de começar
+Fique atento às condições de cobrança
+
+obs: só muda o produto
+
+
+----- tv
+Modal aviso de cobrança - btn continuar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:aviso-cobranca-continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+----- now
+Modal aviso de cobrança - btn continuar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:now:aviso-cobranca-continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+
+---- fone
+Modal aviso de cobrança - btn continuar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:fone:aviso-cobranca-continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
