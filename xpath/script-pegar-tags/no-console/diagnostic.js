@@ -124,14 +124,14 @@ data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").tex
 
 
 // vamos começar? solution-steps
-$x("//div[@id='solution-steps']//button[contains(text(), 'Vamos')]").forEach((btn) => {
-  tags += `Vamos Começar? - botão ${btn.innerText}
-data-gtm-event-category=${btn.attributes.getNamedItem("data-gtm-event-category").textContent}
-data-gtm-event-label=${btn.attributes.getNamedItem("data-gtm-event-label").textContent}
-data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").textContent}
+// $x("//div[@id='solution-steps']//button[contains(text(), 'Vamos')]").forEach((btn) => {
+//   tags += `Vamos Começar? - botão ${btn.innerText}
+// data-gtm-event-category=${btn.attributes.getNamedItem("data-gtm-event-category").textContent}
+// data-gtm-event-label=${btn.attributes.getNamedItem("data-gtm-event-label").textContent}
+// data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").textContent}
 
-`;
-});
+// `;
+// });
 
 
 
@@ -139,9 +139,10 @@ data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").tex
 /*
 solution-steps - Passso 1/3 todos os passos usam os mesmos botões, só muda a tag
 */
+// $x("//div[@id='solution-steps']//p[contains(@class, 'text__highlight')]")
 $x("//div[@id='solution-steps']//button").forEach((btn) => {
-  tags += `
-solution-steps - ${$x("//p[contains(text(), 'Passo')]")[0].innerText} - btn ${btn.innerText}
+  let title = $x("//div[@id='solution-steps']//p[contains(@class, 'text__highlight')]")[0].innerText;
+  tags += `solution-steps - ${title} - btn ${btn.innerText}
 data-gtm-event-category=${btn.attributes.getNamedItem("data-gtm-event-category").textContent}
 data-gtm-event-label=${btn.attributes.getNamedItem("data-gtm-event-label").textContent}
 data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").textContent}
@@ -154,8 +155,7 @@ data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").tex
 
 // uma pena!
 $x("//div[@id='schedule-vt']//div[@id='schedule-vt__message']//button").forEach((btn) => {
-  tags +=`
-schedule-vt - Uma Pena! - btn ${btn.innerText}
+  tags +=`schedule-vt - Uma Pena! - btn ${btn.innerText}
 data-gtm-event-category=${btn.attributes.getNamedItem("data-gtm-event-category").textContent}
 data-gtm-event-label=${btn.attributes.getNamedItem("data-gtm-event-label").textContent}
 data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").textContent}
@@ -169,8 +169,7 @@ data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").tex
 
 // aviso de cobrança
 $x("//div[contains(@class,'modal_box') and //p[contains(text(), 'condições de cobrança')]]//button").forEach((btn) => {
-  tags += `
-Modal aviso de cobrança - btn continuar
+  tags += `Modal aviso de cobrança - btn continuar
 data-gtm-event-category=${btn.attributes.getNamedItem("data-gtm-event-category").textContent}
 data-gtm-event-label=${btn.attributes.getNamedItem("data-gtm-event-label").textContent}
 data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").textContent}
@@ -182,11 +181,11 @@ data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").tex
 
 // schedule-vt - Agendar Visita
 $x("//div[@id='schedule-vt']//div[contains(@class, 'schedule-vt__schedule') and not(contains(@style, 'display: none'))]//button").forEach((btn) => {
-  tags += `
-Agendar Visita - btn - ${btn.innerText}
+  tags += `Agendar Visita - btn - ${btn.innerText}
 data-gtm-event-category=${btn.attributes.getNamedItem("data-gtm-event-category").textContent}
 data-gtm-event-label=${btn.attributes.getNamedItem("data-gtm-event-label").textContent}
 data-gtm-event-action=${btn.attributes.getNamedItem("data-gtm-event-action").textContent}
+
 `;
 });
 
