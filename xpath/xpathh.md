@@ -18,6 +18,10 @@ contains com @class, olhar a sessão "contains com class"
 paga pegar usando apenas uma classe faça o seguinte
 $x("//div[contains(@class,'modal')]")
 
+# text e innerText
+$x("//a[text()='Preciso de ajuda']");  // não consegui usar innerText, obs: é case sensitive
+
+$x("//a[contains(text(),'ciso de ajuda')]");  // substring. é case sensitive
 
 # not - negação
 $x("//div[@id='schedule-vt']//div[contains(@class, 'schedule-vt__schedule') and not(contains(@style, 'display: none'))]//button")
