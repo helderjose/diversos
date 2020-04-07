@@ -28,6 +28,7 @@ git checkout -b version2 v2.0.0
 
 # checkout arquivo outra branch
 Trazer conteúdo de um arquivo de uma branch para outra.
+Lembre-se que checkout vai eliminar as alterações no arquivo local.
 git checkout branchName -- filePath/fileName
 Exemplos:
 git checkout chat -- src/app/app.scss  [faz checkout do arquivo app.scss da branch chat para branch que estou trabalhando]
