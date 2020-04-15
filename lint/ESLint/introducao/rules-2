@@ -1,0 +1,24 @@
+https://eslint.org/docs/rules/
+Obs: na página sobre a regra tem parâmetros para casos específicos.
+Ex: Desabilitar a regra no-trailing-spaces em comentários por exemplo.
+
+semicolon, ponto e vírgula
+https://eslint.org/docs/rules/semi
+semi
+
+dois espaço na indentação
+https://eslint.org/docs/rules/indent
+indent
+
+aspas na string
+https://eslint.org/docs/rules/quotes
+quotes
+
+disallow multiple empty lines - desabilitar múltiplas linhas vazias
+https://eslint.org/docs/rules/no-multiple-empty-lines
+no-multiple-empty-lines
+
+
+disallow trailing whitespace at the end of lines - espaços no fim da linha
+https://eslint.org/docs/rules/no-trailing-spaces
+no-trailing-spaces
