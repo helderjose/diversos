@@ -1,2 +1,8 @@
 - padrão de nomenclatura de url;
 - verbos http
+
+
+
+tratar erro
+https://softwareengineering.stackexchange.com/questions/341732/should-http-status-codes-be-used-to-represent-business-logic-errors-on-a-server
+https://nordicapis.com/best-practices-api-error-handling/
