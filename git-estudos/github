@@ -1,0 +1,39 @@
+# ssh
+https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Obs: Aqui tem dois arquivos de sshy key porque foi o
+que fiz no curso de devops e aproveitei como tutorial.
+
+Abaixo são alguns passos do site:
+
+Passo: Criar o arquivo id_rsa
+/*
+~/.ssh/id_rsa  // já existia, por isso criei a
+~/.ssh-jenkins/id_rsa
+Obs: Poderia ter usado a chave do "~/.ssh/id_rsa" para o jenkins no github, mas
+resolvi criar outra.
+~/.ssh-jenkins/id_rsa deve ser criado antes de criar a chave.
+ls -l:
+-rw-------. 1 helder helder 3.4K May  5 09:46 id_rsa
+*/
+
+
+Passo: Generating a new SSH key
+ssh-keygen -t rsa -b 4096 -C "helderjosemelo@gmail.com"  // e-mail do github
+Enter file in which to save the key: // ~/.ssh-jenkins/id_rsa
+Enter passphrase (empty for no passphrase):  // press enter para deixar sem nada.
+Enter same passphrase again:  // enter novamente
+
+
+Passo: Adding your SSH key to the ssh-agent
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh-jenkins/id_rsa
+ls -l ~/.ssh*  // vai retornar todas as pastas de ssh key
+xclip -sel clip < ~/.ssh-jenkins/id_rsa.pub   // Copies the contents of the id_rsa.pub file to your clipboard
+
+
+Passo: Adicionar a ssh key no github.com
+github.com -> settings -> SSH and GPG keys -> new ssh key
+Title: jenkins
+Key: cole a key gerada
+clique em "Add ssh key"
