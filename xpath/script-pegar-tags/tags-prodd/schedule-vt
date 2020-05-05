@@ -1,0 +1,41 @@
+Uma pena!
+Podemos enviar um de nossos técnicos para resolver. Gostaria de agendar uma visita técnica?
+
+
+
+--- tv
+schedule-vt - Uma Pena! - btn Não
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:pre-agendamento-vt-agendar-nao
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+schedule-vt - Uma Pena! - btn Sim
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:pre-agendamento-vt-agendar-vt
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+
+--- now
+schedule-vt - Uma Pena! - btn Não
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:now:pre-agendamento-vt-agendar-nao
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+schedule-vt - Uma Pena! - btn Sim
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:now:pre-agendamento-vt-agendar-vt
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+---- mais de um produto - all
+schedule-vt - Uma Pena! - btn Não
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:all:pre-agendamento-vt-agendar-nao
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+schedule-vt - Uma Pena! - btn Sim
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:all:pre-agendamento-vt-agendar-vt
+data-gtm-event-action=click:autoatendimento:diagnostico

@@ -1,0 +1,138 @@
+Qual o tipo de problema?
+
+issue-selection - A imagem está ruim
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:A imagem está ruim
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Quero reforçar o sinal da minha TV
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Quero reforçar o sinal da minha TV
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Alguns canais não funcionam
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Alguns canais não funcionam
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Preciso de um novo controle remoto
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Preciso de um novo controle remoto
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Quero mudar o ponto de local
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Quero mudar o ponto de local
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Outros
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Outros
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - botão Voltar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico::selecao-problema-voltar
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - botão Avançar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico::selecao-problema-avancar
+data-gtm-event-action=click:autoatendimento:tecnico
+
+
+
+
+issue-selection - botão Voltar - modal verificar pilhas do controle
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:modal-pilhas-controle-remoto:voltar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+issue-selection - botão Continuar - modal verificar pilhas do controle
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:modal-pilhas-controle-remoto:continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+
+Modal aviso de cobrança - btn continuar
+products: fone - tv - internet - all - now
+
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:fone:aviso-cobranca-continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv:aviso-cobranca-continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:internet:aviso-cobranca-continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:all:aviso-cobranca-continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:now:aviso-cobranca-continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+
+
+----- produto selecionado com a telelvisão -----
+
+issue-selection - A imagem está ruim
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:A imagem está ruim
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Quero reforçar o sinal da minha TV
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Quero reforçar o sinal da minha TV
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Alguns canais não funcionam
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Alguns canais não funcionam
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Preciso de um novo controle remoto
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Preciso de um novo controle remoto
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Quero mudar o ponto de local
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Quero mudar o ponto de local
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - Outros
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:selecao-problema:Outros
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - botão Voltar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:61:selecao-problema-voltar
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - botão Avançar
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:61:selecao-problema-avancar
+data-gtm-event-action=click:autoatendimento:tecnico
+
+issue-selection - botão Voltar - modal verificar pilhas do controle
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:modal-pilhas-controle-remoto:voltar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+issue-selection - botão Continuar - modal verificar pilhas do controle
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:modal-pilhas-controle-remoto:continuar
+data-gtm-event-action=click:autoatendimento:diagnostico
+
+
+
+

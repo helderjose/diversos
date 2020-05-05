@@ -1,0 +1,47 @@
+Com o que você precisa de ajuda?
+
+product-selection - FONE
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:telefone
+data-gtm-event-action=click:autoatendimento:tecnico
+
+product-selection - TV
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:tv
+data-gtm-event-action=click:autoatendimento:tecnico
+
+product-selection - INTERNET
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:internet
+data-gtm-event-action=click:autoatendimento:tecnico
+
+product-selection - all
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:all
+data-gtm-event-action=click:autoatendimento:tecnico
+
+product-selection - NOW
+data-gtm-event-category=net:minha-net
+data-gtm-event-label=diagnostico:now
+data-gtm-event-action=click:autoatendimento:tecnico
+
+product-selection - botão Avançar
+nao tem tags
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
