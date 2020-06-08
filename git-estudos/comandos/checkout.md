@@ -33,3 +33,7 @@ git checkout branchName -- filePath/fileName
 Exemplos:
 git checkout chat -- src/app/app.scss  [faz checkout do arquivo app.scss da branch chat para branch que estou trabalhando]
 git checkout chat -- src/pages/timeline/timeline.html [faz checkout do arquivo timeline.html da branch chat para branch que estou trabalhando]
+
+
+# Accept their in conflict
+https://stackoverflow.com/questions/10697463/resolve-git-merge-conflicts-in-favor-of-their-changes-during-a-pull
