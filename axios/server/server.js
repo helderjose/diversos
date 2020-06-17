@@ -30,8 +30,9 @@ app.get('/', (req, res) => {
 
 app.get('/ajax-info', (req, res) => {
   setTimeout(() => {
+    console.log("request finish")
     res.sendFile(`${ __dirname }/api/ajax-info.txt`);
-  }, 3000);
+  }, 1000);
 });
 
 app.get('/cd-catalog', (req, res) => {

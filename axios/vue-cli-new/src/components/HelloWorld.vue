@@ -16,6 +16,7 @@
         ajaxResult: "",
         frame: 0,
         isShowProgress: true,
+        isRequestFinish: false,
 
         frameInterval: null,
         isFinish: false,
@@ -32,6 +33,7 @@
 
         let response = await axios.get(
           "http://localhost:3000/ajax-info",
+          // "http://10.0.0.135:3000/ajax-info",
           {
             // onUploadProgress:  function (progressEvent) {
             //   console.log("onUploadProgress progressEvent: ", progressEvent)
@@ -44,10 +46,18 @@
           }
         );
 
+        this.finishProgressBar();
+
         await new Promise((resolve) => {
-          if(this.isProgressFinish) {
-            resolve();
-          }
+          let promiseInterval = setInterval(() => {
+            if (this.isProgressFinish) {
+              clearInterval(promiseInterval);
+              resolve();
+            }
+          }, 250);
+          // if(this.isProgressFinish) {
+          //   resolve();
+          // }
         });
 
         console.log("fim")
@@ -56,17 +66,33 @@
 
       startInterval: function(intervalSpeedy) {
         this.frameInterval = setInterval(() => {
-        this.frame++;
 
-          if(this.frame === 83) {
+
+
+          // console.log(this.frame)
+
+          if(this.frame < 100) this.frame++;
+
+
+          // console.log(this.frame)
+
+          if(this.frame === 100) {
+            console.log("no 100% clear")
+            console.log("clearInterval ", this.frameInterval)
             clearInterval(this.frameInterval);
             setTimeout(() => {
               this.isShowProgress = false;
               this.isProgressFinish = true;
             }, 500);
-          } else if (this.frame == 80) {
+          } else if (!this.isRequestFinish && this.frame == 95) {
+            console.log("clearInterval ", this.frameInterval)
             clearInterval(this.frameInterval);
-            this.startInterval(500)
+            // this.startInterval(500)
+          } else if (!this.isRequestFinish && this.frame == 80) {
+            console.log("clearInterval ", this.frameInterval)
+            clearInterval(this.frameInterval);
+            console.log("depois clearInterval ", this.frameInterval)
+            this.startInterval(1300)
           }
         }, intervalSpeedy);
       },
@@ -77,6 +103,12 @@
 
       updateFrame: function (newValue) {
         this.frame = newValue;
+      },
+
+      finishProgressBar: function () {
+        this.stopInterval();
+        this.isRequestFinish = true;
+        this.startInterval(10)
       }
     }
   }
