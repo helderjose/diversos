@@ -1,6 +1,12 @@
 <template>
   <div>
     <p>HelloWord.vue</p>
+    <pre>
+      speedStageOne   {{ consts.speedStageOne }}
+      speedStageTwo   {{ consts.speedStageTwo }}
+      stopStageOne    {{ consts.stopStageOne }}
+      stopStageTwo    {{ consts.stopStageTwo }}
+    </pre>
     <p v-if="isShowProgress"> {{ frame }}% </p>
     <div v-html=ajaxResult> </div>
     <button @click="getTest()">Click</button>
@@ -22,14 +28,22 @@
         isFinish: false,
         isStageOne: true,
         isStageTwo: false,
-        isProgressFinish: false
+        isProgressFinish: false,
+
+        consts: Object.freeze({
+          speedStageOne: Math.floor(Math.random() * (500 - 10 + 1)) + 10,
+          speedStageTwo: Math.floor(Math.random() * (3000 - 1300 + 1)) + 1300,
+
+          stopStageOne: Math.floor(Math.random() * (85 - 60 + 1)) + 60, // sempre tem que ser menor que o stopStageTwo
+          stopStageTwo: Math.floor(Math.random() * (97 - 86 + 1)) + 86,  // sempre deve ser maior que o stopStageOne
+        })
+
+
       }
     },
     methods: {
       getTest: async function () {
-        console.log("início")
-
-        this.startInterval(10);
+        this.startInterval(this.consts.speedStageOne);
 
         let response = await axios.get(
           "http://localhost:3000/ajax-info",
@@ -55,9 +69,6 @@
               resolve();
             }
           }, 250);
-          // if(this.isProgressFinish) {
-          //   resolve();
-          // }
         });
 
         console.log("fim")
@@ -67,46 +78,33 @@
       startInterval: function(intervalSpeedy) {
         this.frameInterval = setInterval(() => {
 
-
-
-          // console.log(this.frame)
-
           if(this.frame < 100) this.frame++;
 
-
-          // console.log(this.frame)
-
           if(this.frame === 100) {
-            console.log("no 100% clear")
-            console.log("clearInterval ", this.frameInterval)
             clearInterval(this.frameInterval);
             setTimeout(() => {
               this.isShowProgress = false;
               this.isProgressFinish = true;
             }, 500);
-          } else if (!this.isRequestFinish && this.frame == 95) {
-            console.log("clearInterval ", this.frameInterval)
+          } else if (!this.isRequestFinish && this.frame == this.consts.stopStageTwo) {
             clearInterval(this.frameInterval);
-            // this.startInterval(500)
-          } else if (!this.isRequestFinish && this.frame == 80) {
-            console.log("clearInterval ", this.frameInterval)
+          } else if (!this.isRequestFinish && this.frame == this.consts.stopStageOne) {
             clearInterval(this.frameInterval);
-            console.log("depois clearInterval ", this.frameInterval)
-            this.startInterval(1300)
+            this.startInterval(this.consts.speedStageTwo)
           }
         }, intervalSpeedy);
       },
 
-      stopInterval: function() {
-        clearInterval(this.frameInterval)
-      },
+      // stopInterval: function() {
+      //   clearInterval(this.frameInterval)
+      // },
 
       updateFrame: function (newValue) {
         this.frame = newValue;
       },
 
       finishProgressBar: function () {
-        this.stopInterval();
+        clearInterval(this.frameInterval)
         this.isRequestFinish = true;
         this.startInterval(10)
       }
