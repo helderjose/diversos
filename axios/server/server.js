@@ -32,7 +32,8 @@ app.get('/ajax-info', (req, res) => {
   setTimeout(() => {
     console.log("request finish")
     res.sendFile(`${ __dirname }/api/ajax-info.txt`);
-  }, 1000);
+    // res.send(408); //timeout
+  }, 2000);
 });
 
 app.get('/cd-catalog', (req, res) => {

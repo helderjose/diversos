@@ -45,38 +45,51 @@
       getTest: async function () {
         this.startInterval(this.consts.speedStageOne);
 
-        let response = await axios.get(
-          "http://localhost:3000/ajax-info",
-          // "http://10.0.0.135:3000/ajax-info",
-          {
-            // onUploadProgress:  function (progressEvent) {
-            //   console.log("onUploadProgress progressEvent: ", progressEvent)
-            // },
-            // onDownloadProgress: function (progressEvent) {
-            //   console.log(Math.floor((progressEvent.loaded * 100) / progressEvent.total))
-            //   console.log(progressEvent.loaded, progressEvent.total)
-            //   console.log("onDownloadProgress progressEvent: ", progressEvent)
-            // },
-          }
-        );
-
-        this.finishProgressBar();
-
-        await new Promise((resolve) => {
-          let promiseInterval = setInterval(() => {
-            if (this.isProgressFinish) {
-              clearInterval(promiseInterval);
-              resolve();
+        try {
+          let response = await axios.get(
+            "http://localhost:3000/ajax-info",
+            // "http://10.0.0.135:3000/ajax-info",
+            {
+              // onUploadProgress:  function (progressEvent) {
+              //   console.log("onUploadProgress progressEvent: ", progressEvent)
+              // },
+              // onDownloadProgress: function (progressEvent) {
+              //   // quando dá erro não entra aqui
+              //   console.log(Math.floor((progressEvent.loaded * 100) / progressEvent.total))
+              //   console.log(progressEvent.loaded, progressEvent.total)
+              //   console.log("onDownloadProgress progressEvent: ", progressEvent)
+              // },
             }
-          }, 250);
-        });
+          );
 
-        console.log("fim")
-        this.ajaxResult = response.data
+          this.finishProgressBar();
+
+          await new Promise((resolve) => {
+            let promiseInterval = setInterval(() => {
+              if (this.isProgressFinish) {
+                clearInterval(promiseInterval);
+                resolve();
+              }
+            }, 250);
+          });
+
+          console.log("fim")
+          this.ajaxResult = response.data
+
+        } catch(error) {
+          clearInterval(this.frameInterval)
+          console.log("deve redirecionar para página de erro");
+          return;
+        } finally {
+
+        }
+
+        console.log("não pode chegar aqui quando dá erro"); // caso tenha mais código
       },
 
       startInterval: function(intervalSpeedy) {
         this.frameInterval = setInterval(() => {
+          console.log("no interval")
 
           if(this.frame < 100) this.frame++;
 
@@ -110,4 +123,10 @@
       }
     }
   }
+  /*
+    Já testado:
+    - sucesso na chamada;
+    - erro na chamada;
+    - comportamento do algoritmo
+  */
 </script>
