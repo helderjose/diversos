@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    :root {
+      background-color: #fff;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    #canvas-wrap {
+      width: 205px;
+      height: 205px;
+      position: relative;
+      border-radius: 50%;
+      background-color: orange;;
+    }
+
+    #canvas {
+      top: 50%;
+      left: 50%;
+      border: solid 2px darkblue;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: orange;
+    }
+
+    span#procent {
+      top: 50%;
+      left: 50%;
+      color: white;
+      display: block;
+      position: absolute;
+      font-size: 20px;
+      transform: translate(-50%, -50%);
+    }
+
+    span#procent::after {
+      content: '%';
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas-wrap">
+    <canvas id="canvas" width="150" height="150"></canvas>
+    <span id="procent"></span>
+  </div>
+</body>
+<script>
+
+window.onload = function() {
+  var can = document.getElementById('canvas'),
+      spanProcent = document.getElementById('procent'),
+      c = can.getContext('2d');
+
+  var posX = can.width / 2,
+      posY = can.height / 2,
+      fps = 1000 / 200,
+      procent = 0,
+      oneProcent = 360 / 100,
+      result = oneProcent * 64; // conta até 64%
+
+  c.lineCap = 'round';
+  arcMove();
+
+  function arcMove(){
+    var deegres = 0;
+    var acrInterval = setInterval (function() {
+      deegres += 1;
+      c.clearRect( 0, 0, can.width, can.height );
+      procent = deegres / oneProcent;
+
+      spanProcent.innerHTML = procent.toFixed();
+
+      c.beginPath();
+      c.arc( posX, posY, 76, (Math.PI/180) * 270, (Math.PI/180) * (270 + 360) );
+      c.strokeStyle = 'orange'; // cor de fundo da barra redonda "cinza"
+      // c.strokeStyle = 'bisque'; // cor de fundo da barra redonda "cinza"
+      c.lineWidth = '8'; // funco cinza
+      c.stroke();
+
+      c.beginPath();
+      c.strokeStyle = 'darkblue'; // cor do preenchimento (progresso) da barra redonda
+      c.lineWidth = '8';
+      c.arc( posX, posY, 76, (Math.PI/180) * 270, (Math.PI/180) * (270 + deegres) );
+      c.stroke();
+      if( deegres >= result ) clearInterval(acrInterval);
+    }, fps);
+
+  }
+
+
+}
+</script>
+</html>
