@@ -37,6 +37,7 @@ git log -- <file>
 # log de arquivo específico com diffs para cada mudança
 git log -p -- <file>
 git log -p -- <commit-number>
+git log -p <commit-number>
 
 
 # Show the entire history of a file (including history beyond renames):
