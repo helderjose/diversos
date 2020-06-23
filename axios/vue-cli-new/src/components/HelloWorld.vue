@@ -25,9 +25,9 @@
         isRequestFinish: false,
 
         frameInterval: null,
-        isFinish: false,
-        isStageOne: true,
-        isStageTwo: false,
+        // isFinish: false,
+        // isStageOne: true,
+        // isStageTwo: false,
         isProgressFinish: false,
 
         consts: Object.freeze({
