@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div style="background-color: bisque">
     <p>HelloWord.vue</p>
+    <h1>Timer Ajax</h1>
     <pre>
       speedStageOne   {{ consts.speedStageOne }}
       speedStageTwo   {{ consts.speedStageTwo }}
