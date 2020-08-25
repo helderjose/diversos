@@ -5,3 +5,7 @@ git log --all
 # Merge Branch - pega as alterações da develop o joga para a master
 git checkout master
 git merge orgin develop
+
+
+# Outros
+git merge --abort   // cancelar o merge

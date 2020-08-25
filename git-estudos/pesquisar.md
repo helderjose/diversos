@@ -5,3 +5,8 @@ https://about.gitlab.com/blog/2016/12/01/how-to-keep-your-fork-up-to-date-with-i
 
 cherry-pick
 https://git-scm.com/docs/git-cherry-pick
+
+
+fork
+No meu namespace
+git pull upstream branch-name
