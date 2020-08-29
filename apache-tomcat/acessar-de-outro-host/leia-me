@@ -1,0 +1,10 @@
+Permitir acesso de outro host, ex jenkins no pc A fazer deploy no tomcat do pc B.
+
+coloque o arquivo manager.xml na pasta
+conf/Catalina/localhost
+com o seguinte conteúdo
+
+<Context privileged="true" antiResourceLocking="false"
+	docBase="${catalina.home}/webapps/manager">
+	<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
