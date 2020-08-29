@@ -26,6 +26,8 @@ Exemplo do arquivo .gitconfig após executar os comando:
 git config --list | grep alias
 
 # Criar alias
+obs: não uso assim, uso alias no sistema operacional.
+
 git config --global alias.br branch
 git config --global alias.ch checkout
 git config --global alias.co commit
@@ -54,3 +56,7 @@ git st ou git stu
 Supondo que exista a linha "user.mail" (o correto é user.email), para
 deletar execute:
 git config --global --unset user.mail
+
+# Set User
+Configurar usuários
+https://smarterco.de/set-the-username-and-email-in-git-globally-and-per-project/

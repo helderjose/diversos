@@ -62,39 +62,44 @@ window.onload = function() {
 
   var posX = can.width / 2,
       posY = can.height / 2,
-      fps = 1000 / 200,
-      percent = 0,
-      onePercentCircle = 360 / 100,
-      result = onePercentCircle * 100; // conta até 100%
+      onePercentCircle = 360 / 100;
+
+  console.log("posX: ", posX)
+
 
   c.lineCap = 'round';
   arcMove();
 
   function arcMove(){
-    var deegres = 0;
-    var acrInterval = setInterval (function() {
-      deegres += 1;
-      c.clearRect( 0, 0, can.width, can.height );
-      percent = deegres / onePercentCircle;
+    let timeToWait = 2000; // duracao do timer
+    let onePercentTimeToWait = timeToWait / 100;
+    let progressPercentage = 0;
 
-      spanProcent.innerHTML = percent.toFixed();
+    spanProcent.innerHTML = progressPercentage;
+
+    let acrInterval = setInterval (() => {
+      c.clearRect( 0, 0, can.width, can.height );
+      spanProcent.innerHTML = progressPercentage;
 
       c.beginPath();
       c.arc( posX, posY, 76, (Math.PI/180) * 270, (Math.PI/180) * (270 + 360) );
-      console.log("1: ", (Math.PI/180) * 270, (Math.PI/180) * (270 + 360))
       c.strokeStyle = 'orange'; // cor de fundo da barra redonda "cinza"
-      // c.strokeStyle = 'bisque'; // cor de fundo da barra redonda "cinza"
       c.lineWidth = '8'; // fundo cinza
       c.stroke();
 
       c.beginPath();
+      c.arc( posX, posY, 76, (Math.PI/180) * 270, (Math.PI/180) * (270 + progressPercentage * onePercentCircle) );
       c.strokeStyle = 'darkblue'; // cor do preenchimento (progresso) da barra redonda
       c.lineWidth = '8';
-      c.arc( posX, posY, 76, (Math.PI/180) * 270, (Math.PI/180) * (270 + deegres) );
-      console.log("2: ", (Math.PI/180) * 270, (Math.PI/180) * (270 + deegres))
       c.stroke();
-      if( deegres >= result ) clearInterval(acrInterval);
-    }, fps);
+
+      progressPercentage++;
+
+      if(progressPercentage > 100) {
+        clearInterval(acrInterval);
+        console.log("fim");
+      }
+    }, onePercentTimeToWait);
 
   }
 

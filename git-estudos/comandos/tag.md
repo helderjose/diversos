@@ -13,6 +13,9 @@ git push origin v1.5
 git push origin --tags // várias tags de uma vez
 
 ## Deletar tag
+git tag -d 1.4 // deleta local
+git push origin --delete 1.4 // deleta no servidor remoto
+
 git tag -d v1.4 // deleta local
 git push origin --delete v1.4 // deleta no servidor remoto
 git push origin :refs/tags/v1.4 // deleta no servidor remoto
