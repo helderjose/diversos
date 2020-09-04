@@ -1,0 +1,4 @@
+Arquivo continua a parecendo mesmo estando no gitignore:
+* Remover o arquivo sem remoção física (olhar o arquivo comandos/rm.md)
+* commit a remoção. (a partir de agora o arquivo ignorado não deve aparecer mais)
+
