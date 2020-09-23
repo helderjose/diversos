@@ -43,3 +43,9 @@ bf0669e091ea9b2bccb6c965f0279424f3ea5303
 
 tag
 11f58d1cd4aed5c4ab11099d916e0e76a6dff1ff (tag: 2.0.1)
+
+
+# organizar
+diff com stash
+https://stackoverflow.com/questions/7677736/git-diff-against-a-stash
+
