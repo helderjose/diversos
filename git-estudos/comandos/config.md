@@ -60,3 +60,8 @@ git config --global --unset user.mail
 # Set User
 Configurar usuários
 https://smarterco.de/set-the-username-and-email-in-git-globally-and-per-project/
+
+
+configurar usuário e senha https
+https://git-scm.com/docs/gitcredentials
+https://unix.stackexchange.com/questions/335704/how-to-set-up-username-and-passwords-for-different-git-repos
