@@ -12,6 +12,7 @@ git add myFile
 git reset myFile
 
 ## Remover o Commit de uma Branch (uncommit - remove da lista de commits)
+## Remover aquivos de merge
 # Exemplo
 //git log
 git add myFiles
