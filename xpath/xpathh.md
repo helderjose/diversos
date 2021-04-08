@@ -91,3 +91,11 @@ $x("//button[text='Vamos Lá!']").length
 
 $x("//button" and [text() = 'Vamos Lá!'])
 $x("//button[@type='button' and text()='Vamos Lá!']")
+
+
+
+# position
+pegar um elemento do array de elementos
+$x("//label[@for='mcr-list-radio-400508959']")    // retorna um array com vários elementos
+$x("//label[@for='mcr-list-radio-400508959'][position()=1]")  // primeiro elemento do array
+$x("//label[@for='mcr-list-radio-400508959'][position()=2]")  // segundo elemento do array
