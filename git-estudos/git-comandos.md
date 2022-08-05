@@ -27,20 +27,6 @@ git status -u	//Show untracked files.
 
 
 
-# stash
-https://git-scm.com/docs/git-stash
-
-git stash list
-git stash show
-git stash save stash-name
-git stash drop stash@\{0\}
-
-#### stash arquivo específico
-Não achei uma maneira "certa" de fazer
-1. Faça checkout dos arquivos que não deseja fazer stash;
-1. Jogue os arquivos que sobraram para o stash.
-
-
 # stage
 https://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git
 
