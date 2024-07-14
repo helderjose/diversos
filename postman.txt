@@ -1,0 +1,22 @@
+Vídeo sobre postman: https://www.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729308#overview
+----------------
+
+
+environment - variables
+----------------------------------
+
+
+Authentication
+- Environment -> crie a variável authToken;
+
+- collection -> Authorization -> Bearer Token -> token {{authToken}}
+
+- Em um request de login por exemplo -> tests (aba) -> verifique o response e use-o para setar a variável authToken,
+    olhar código de exemplo abaixo:
+
+    if (pm.response.code === 200) {
+      /* authToken foi declarado na collection */
+      pm.environment.set('authToken', pm.response.json().token)
+    }
+
+- No request que precise do token selecione Authorization -> inherit auth from parent (para pegar do environment)

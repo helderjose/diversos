@@ -36,7 +36,7 @@ git difftool branchB meu-projeto/meu-arquivo.txt (compara o arquivo da branchB c
 
 
 # comparar arquivo da branch com o do stash
-git difftool stash@{1} my-file.css     // myfile.css do stash com my-file.css atual
+git difftool stash@{1} my-file.css     // my-file.css do stash com my-file.css atual
 gdt develop stash@{0} myFile.css     //  compara myFile.css da develop com o do stash 0
 
 
