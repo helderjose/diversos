@@ -1,0 +1,32 @@
+Atlas
+https://www.mongodb.com/products/platform/atlas-database
+
+Estou usando a versão free
+
+
+
+Database -> build a cluster
+  selecione a versão free e mantenhas as configurações padrão.
+  create deployment
+  
+  
+  
+Configurações do cluster (esse exemplo é do app task manager do curso de nodeJs)
+
+ip: 0.0.0.0/0  
+  usou assim por causa do heroku. Heroku is going to change that ip over time
+
+create database user
+username: taskmanagerapp
+password: O4Ic23NDOw0QGe5r  (esse o site mesmo gerou, usei ele mesmo)
+
+Choose a connection methods
+  Compass (igual ao studio 3t, mas o compass é da Atlas);
+  Fazer download do .rpm e instalar o compass;
+  
+Abra o MongoDB Compass
+  new connection -> (pegar a url de conexão no site MongoDB Atlas)
+  mongodb+srv
+  Authentication Method
+    username/password (preencher os dois, pegar do passo "create database user")
+      

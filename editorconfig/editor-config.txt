@@ -1,0 +1,3 @@
+https://editorconfig.org/
+
+crie o arquivo .editorconfig na raiz do projeto

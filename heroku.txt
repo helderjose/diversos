@@ -1,0 +1,13 @@
+comandos heroku
+  heroku create [app-name]
+    - app-name não pode existir no heroku (não só na minha conta, no heroku todo)
+
+  heroku config:set key=value   // cria uma variável de ambiente
+  heroku config   // exibe as variáveis de ambiente.
+
+  heroku config: unset key    // remove uma variável de ambiente
+
+
+  Criar várias variáveis de uma vez.
+
+  heroku config:ser key=value key2=value2
