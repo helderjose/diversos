@@ -1,0 +1,118 @@
+
+
+Markdown Preview Enhanced
+Ver arquivo .md formatado
+------------------------------------------
+
+Editor Markdown .md
+https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
+-------------------------------------------------------
+
+Trailling Spaces
+Exibe espaço em branco no fim da linha
+https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
+------------------------------------------------------------------
+
+GitLens
+GitLens — Git supercharged
+https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+-----------------------------------------
+
+SonarLint
+https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode
+---------------------------------------------------
+
+Material Icon Theme
+Material Design Icons for Visual Studio Code
+ìcone para cada tipo de arquivo.
+https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+--------------------------------------
+
+Dracula
+Thema para o VSCode
+----------------------------------------------
+
+
+
+
+
+
+
+
+Debugger for Firefox
+https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-firefox-debug
+
+Debugger for Chrome
+https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome
+
+
+Move TS = atualiza os imports que usam a pasta quando mudar os arquivos de lugar.
+bd na pasta -> move typescript
+https://marketplace.visualstudio.com/items?itemName=stringham.move-ts
+
+typescript hero = organiza os imports em ordem alfabética
+https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero
+
+docker = Adds syntax highlighting commands, hover tips...
+https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker
+
+
+
+
+
+Auto Import
+https://marketplace.visualstudio.com/items?itemName=steoates.autoimport
+
+Color Highlight
+This extension styles css/web colors found in your document.
+https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
+
+Move TS - Move TypeScript files and update relative imports
+Supports moving typescript files and updating relative imports within the workspace.
+https://marketplace.visualstudio.com/items?itemName=stringham.move-ts
+
+Paste and Indent
+This extension adds limited support for pasting and indenting code. Much like SublimeText's paste_and_indent.
+https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent
+
+Path Intellisense
+Visual Studio Code plugin that autocompletes filenames.
+https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
+
+Sass - Robin Bentley
+Indented Sass syntax highlighting, autocomplete & snippets for VSCode
+
+TypeScript Hero
+TypeScript Hero is a vscode extension that makes your life easier. When you are
+coding a lot of TypeScript you may want vscode to organize your imports.
+https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero
+
+vscode-styled-components
+Syntax highlighting and IntelliSense for styled-components.
+https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
+
+Regex Previewer
+Shows the current regular expression's matches in a side-by-side document. This can be turned on/off with Ctrl+Alt+M (⌥⌘M).
+https://marketplace.visualstudio.com/items?itemName=chrmarti.regex
+
+Code Spell Checker
+A basic spell checker that works well with camelCase code.
+The goal of this spell checker is to help catch common spelling errors while keeping the number of false positives low.
+https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+
+
+CodeMetrics
+Computes complexity in TypeScript / JavaScript / Lua files.
+Complexity calculation
+https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-codemetrics
+-------------------------------
+
+
+
+
+testar
+Prettier Formatter for Visual Studio Code
+https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+Acho que esse quebra linha que está concatenada e remove aspas do json
+-------------------
+

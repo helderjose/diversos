@@ -1,0 +1,9 @@
+Vetur
+Vue tooling for VS Code
+https://marketplace.visualstudio.com/items?itemName=octref.vetur
+----------------------------------------------------------------------------
+
+Vue Syntax Highlight
+https://marketplace.visualstudio.com/items?itemName=znck.vue
+----------------------------------------------------------------------------
+

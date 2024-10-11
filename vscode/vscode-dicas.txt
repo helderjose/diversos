@@ -1,0 +1,9 @@
+.vscode
+  Criar a pasta .vscode e colocar as extensões recomendadas para o projeto
+-----------------------------------------------------------
+
+extensões
+  remote ssh
+  remote containers
+  remote development
+  live share - acesso remoto do vsCode, ajudar com código

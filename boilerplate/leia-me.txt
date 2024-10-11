@@ -1,0 +1,28 @@
+criar o arquivo .nvmrc
+criar o editorconfig
+
+npm init -y
+npm install --save-dev nodemon typescript eslint
+
+Configurando typescript
+./node_modules/.bin/tsc -v
+./node_modules/.bin/tsc --init
+
+
+configurando lint (ainda naõ deu certo)
+./node_modules/.bin/eslint -v
+./node_modules/.bin/eslint --help
+./node_modules/.bin/eslint --init
+  - to check syntax and find problems
+  - javascript modules(import/export) (dependendo o projeto pode usar o CommonJs (require/exports))
+
+
+
+configurando prettier
+npm install --save-dev --save-exact prettier
+  - criar o arquivo .prettierrc
+
+configurarando o prettier com eslint (editar o código ao salvar)
+npm install --save-dev eslint-plugin-prettier
+npm install --save-dev eslint-config-prettier
+

@@ -1,0 +1,3 @@
+https://www.tutorialspoint.com/graphql/graphql_example.htm
+https://www.freecodecamp.org/news/a-beginners-guide-to-graphql-86f849ce1bec/
+https://www.reddit.com/r/graphql/comments/13pmslg/graphql_network_inspector_is_now_available_on/?tl=pt-br&rdt=50541

@@ -1,0 +1,29 @@
+ctrl + k + c (comentar) obs: apertar um por vez.
+
+alt + LB	(adiciona vários cursores)
+alt + arrow up	(move a linha para cima)
+alt + shift + i  (format)
+ctrl + h
+ctrl + shift + o (procura por um métod na classe)
+
+selecione um texto + ctrl + d //para selecionar outras correspondências
+
+
+
+
+
+---------- debugar pelo editor ----------
+https://code.visualstudio.com/docs/nodejs/angular-tutorial
++ No VsCode
+- ctrl + shift + x
+  instale o debugger for chrome
++ crie um breakpoint
++ clique ícone de debug ou ctrl + shift + D
++ clique na catraca -> chrome (vai criar o launch.json)
++ dê play no debug
+
+- firefox
+  instale o debugger for firefox
+
+---------- configurações ----------
+Quantidade de caracteres no tab: File -> Preferences -> Settings

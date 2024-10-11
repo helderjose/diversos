@@ -4,4 +4,5 @@ npm install --save-dev eslint
 ./node_modules/.bin/eslint --init
 
 
+// corrige o arquivo (se não tiver plugin instalado no vsCode por exemplo)
 ./node_modules/.bin/eslint --fix app.js

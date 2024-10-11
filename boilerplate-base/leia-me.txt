@@ -1,0 +1,11 @@
+criar o arquivo .nvmrc
+criar o editorconfig
+
+npm init -y
+npm install --save-dev nodemon typescript eslint
+
+
+configurando lint (ainda naõ deu certo)
+./node_modules/.bin/eslint -v
+./node_modules/.bin/eslint --help
+./node_modules/.bin/eslint --init

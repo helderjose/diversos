@@ -1,0 +1,3 @@
+Cria a pasta .vscode na raiz do projeto
+
+https://code.visualstudio.com/docs/getstarted/settings

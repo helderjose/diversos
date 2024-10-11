@@ -1,0 +1,19 @@
+{
+  "name": "boilerplate-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "compile-dev": "tsc -w -diagnostics",
+    "dev": "cd /tmp && nodemon ./dist/index.js",
+    "lint": "eslint src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.2"
+  }
+}
