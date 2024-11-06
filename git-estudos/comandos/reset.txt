@@ -1,5 +1,8 @@
 # Cancel Stage Changes (before committing)
 ## Desfazer alterações (unadd)
+Desfaz o <git add> mantendo as alterações.
+Também mantém as alterações dos arquivos que não foram adicionados.
+
 git add hello.html
 git reset HEAD hello.html   // desfaz o add hello.html mantendo as alterações no arquivo
 
@@ -7,9 +10,11 @@ git reset HEAD hello.html   // desfaz o add hello.html mantendo as alterações 
 git add .
 git reset (sem ponto)
 
+
 ## "unadd" specific file
 git add myFile
 git reset myFile
+
 
 ## Remover o Commit de uma Branch (uncommit - remove da lista de commits)
 ## Remover aquivos de merge
