@@ -32,6 +32,31 @@ git reset --hard v1 // remove a tag e destroi as alterações (reset local)
 git log --all // vai ver os commits feitos depois da v1
 
 
+----- desfazer commit "uncommit" -----
+Cenário: na branch master, fiz commit apenas local.
+saída do log (observe que só fiz o commit, ainda não dei push)
+
+      commit a131b3da7a581b6205ffae0ccbd545ce91bef61c (HEAD -> master)
+      Author: Helder Jose Melo <helder.goncalves@accurate.com.br>
+      Date:   Mon Nov 18 09:46:24 2024 -0300
+
+          chore: footer 1.0.8
+
+      commit e7cac743c7548686c8c780850b47cd69aa6cb26d (tag: 25.4.0, origin/master, origin/HEAD)
+      Merge: e80635a0 d1a21105
+      Author: pedro.feliciano.qua <pedro.feliciano@quality.com.br>
+      Date:   Wed Nov 13 17:02:05 2024 +0000
+
+          Merge branch 'Release/tecnica' into 'master'
+
+          wifi-password version 2.7.6
+
+          See merge request ecare-net-front/minha-clarors/portal-mcr-public!1535
+
+
+git reset origin/master
+  desfazer o commit sem perder as asterações
+------------------------------------------------------------
 
 
 
@@ -39,9 +64,7 @@ git log --all // vai ver os commits feitos depois da v1
 
 
 
------ "uncommit"  desfazer commit -----
 
------------------
 
 ----- voltar push (resetar branch) -----
 https://githowto.com/pt-BR/removing_commits_from_a_branch
