@@ -2,6 +2,7 @@
 
 Markdown Preview Enhanced
 Ver arquivo .md formatado
+https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
 ------------------------------------------
 
 Editor Markdown .md

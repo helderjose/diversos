@@ -7,3 +7,10 @@ extensões
   remote containers
   remote development
   live share - acesso remoto do vsCode, ajudar com código
+---------------------------------------------------------------------
+
+
+
+inline parent/child folder
+file -> preferences -> settings -> features -> explorer
+  desmarcar "compact folders".
