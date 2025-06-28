@@ -1,0 +1,33 @@
+https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-use-the-git-clean-command
+
+
+clean permanently deletes file.
+
+
+git clean -n
+  To see a dry run. (um teste, apenas lista os arquivos que serão deletados.)
+
+git clean -fd
+  remove file and directories
+
+# clean a specific file
+git clean -f <path_to_file> <path_to_file> ...
+
+
+
+git clean -fx
+  Remove files ignored by .gitignore too: If you want to remove untracked
+  files that are also listed in your .gitignore file, use
+  the -x option along with -f:
+
+
+
+
+git clean -i
+  interactive mode // não me ajudou muito.
+
+
+-------------------------------------
+untracked file
+remove untracked file
+delete untracked file

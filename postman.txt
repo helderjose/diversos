@@ -1,4 +1,6 @@
-Vídeo sobre postman: https://www.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729308#overview
+Vídeos sobre postman:
+https://www.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729194#overview
+https://www.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729308#overview
 ----------------
 
 
