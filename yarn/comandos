@@ -14,4 +14,3 @@ yarn add --dev <package> (npm install --save-dev <package>)
 rodar npm scripts
 yarn <script> (npm run <script>)
 yarn run <script> (npm run <script>)
-

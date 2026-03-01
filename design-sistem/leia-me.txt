@@ -1,2 +1,4 @@
 https://mondrian.claro.com.br/tokens/claro-tokens-latest.custom-properties.css
+
+https://mondrian.claro.com.br/snippets/react/index.html
 https://mondrian.claro.com.br/snippets/index.html?path=/story/home--welcome

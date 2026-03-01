@@ -3,6 +3,7 @@ https://git-scm.com/docs/git-stash
 
 git stash list
 git stash save stash-name
+git stash apply atash@\{0\}
 git stash drop stash@\{0\}
 
 # show

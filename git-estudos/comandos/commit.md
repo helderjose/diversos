@@ -6,3 +6,11 @@ git commit -m "Add an author comment"
 git add hello.html
 git commit --amend -m "Add an author/email comment"
 obs: esse exemplo altera o último commit
+---------------------------------------------
+
+exemplo:
+- edite o arquivo
+git add hello.html
+git commit -m "Add an author comment"
+git commit --amend -m "Add an author/email comment"
+obs: esse exemplo altera o último commit
